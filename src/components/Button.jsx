@@ -5,7 +5,9 @@ const Button = ({ label, iconUrl }) => {
     text-lg leading-none text-white  border-coral-red rounded-full bg-coral-red"
     >
       {label}
-      <img src={iconUrl} alt="icon" className="ml-2 rounded-full w-5 h-5" />
+      {iconUrl && (
+        <img src={iconUrl} alt="icon" className="ml-2 rounded-full w-5 h-5" />
+      )}
     </button>
   );
 };
